@@ -1,4 +1,4 @@
 # TimerBomb
 Timer Bomb Simulator - AVR
 
-Here you can check used registers:
+<img src="https://github.com/sadrasabouri/TimerBomb/blob/main/Others/Shematics.png">
