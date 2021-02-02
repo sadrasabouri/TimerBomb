@@ -20,7 +20,7 @@ End of each run will be ended to one of these bellow situations:
 
 | Defused | Burst |
 |:-------:||:-------:|
-| <img width="435" height="204" src="https://github.com/sadrasabouri/TimerBomb/blob/main/Others/Defused.png"> | <img width="435" height="204" src="https://github.com/sadrasabouri/TimerBomb/blob/main/Others/Burst.png"> |
+| <img width="435" height="204" src="https://github.com/sadrasabouri/TimerBomb/blob/main/Others/Defused.PNG"> | <img width="435" height="204" src="https://github.com/sadrasabouri/TimerBomb/blob/main/Others/Burst.PNG"> |
 
 Here is a table which declares each registor and it's use in this code:
 
