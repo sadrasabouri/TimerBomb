@@ -19,13 +19,13 @@ Bomb passcode will be inputted by a terminal box containing 4 char (and it's by 
 End of each run will be ended to one of these bellow situations:
 
 | Defused | Burst |
-|:-------:||:-------:|
+|:-------:|:-------:|
 | <img width="435" height="204" src="https://github.com/sadrasabouri/TimerBomb/blob/main/Others/Defused.PNG"> | <img width="435" height="204" src="https://github.com/sadrasabouri/TimerBomb/blob/main/Others/Burst.PNG"> |
 
 Here is a table which declares each registor and it's use in this code:
 
 | Registor | Use |
-|:-------:||:-------:|
+|:-------:|:-------:|
 | R16 | Is always 0 and used in delay functions |
 | R17 | Used in delay loops |
 | R18 | Used in delay loops |
