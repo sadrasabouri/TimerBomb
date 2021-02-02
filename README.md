@@ -36,6 +36,7 @@ Here is a table which declares each registor and it's use in this code:
 | R23 | Third char of inputted code |
 | R24 | Fourth char of inputted code |
 | R25 | Terminal in buffer |
-| R26 | LSM of timer seconds |
+| R26 | LSB of timer seconds |
 | R27 | MSB of timer seconds |
 | R29 | Input terminal state |
+
