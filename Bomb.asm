@@ -2,7 +2,7 @@
 JMP MAIN 
 
 ;================================================================
-;					Terminal Input Section
+;					Terminal_Input_Section
 ;================================================================
 .ORG 0X001A				;	Interrupt Service Routine (ISR) Address - Terminal Input
 CBI UCSRA, RXC			;	Clear USART Receive Complete flag -  new message recived
@@ -67,7 +67,7 @@ COMPARE:				   ;	Check if inputted code is correct or not (Accepted code = 9697)
 RET
 
 ;================================================================
-;						Main Code
+;						Main_Code
 ;================================================================
 .ORG 0X00FF
 MAIN:
@@ -102,7 +102,7 @@ MAIN:
    LDI R20, 0X86 		; 	Select Register UCSRC, 1Byte character
    OUT UCSRC, R20		;	USART Control and Status Register C configured
 
-   ;	-------------------------Setting the LCD to 00:01:00--------------------------	;
+   ;	-------------------------Setting_the_LCD_to_00:01:00--------------------------	;
    LDI R20, 0X20		;	Move cursor to right
    CALL DISP
    LDI R20, 0X20		;	Move cursor to right
@@ -129,7 +129,7 @@ MAIN:
    CALL DISP
    CALL DELAY1 		; 	1 Second Delay
    
-   ;	-------------------------Setting the LCD to 00:00:59-------------------------	;
+   ;	-------------------------Setting_the_LCD_to_00:00:59-------------------------	;
    LDI R20, 0X01 		; 	Clear Display (also clear DDRAM content)
    CALL CMND
    LDI R20, 0X20		;	Move cursor to right
@@ -160,7 +160,7 @@ MAIN:
    LDI R20, 0X10		;	Move cursor left
    CALL CMND
    
-   ;	-------------------------		Timer Start		-------------------------	;
+   ;	-------------------------		Timer_Start		-------------------------	;
    LDI R27, 0X35 		; 	50 s
    LDI R26, 0X39 		; 	+9 s = 59s timer
     TENS_TIMER:
@@ -194,7 +194,7 @@ MAIN:
 
    
 ;================================================================
-;						Other Subroutines
+;						Other_Subroutines
 ;================================================================
 STUCK: 
 JMP STUCK				;	Jump to itselt and stuck here
